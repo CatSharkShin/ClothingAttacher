@@ -27,7 +27,7 @@ https://catsharku.gumroad.com
   src="https://i.imgur.com/CanKzRc.png"
   alt="Alt text"
   title="Optional title"
-  style="display: block; margin: 0 auto;  width: 300px">
+  style="display: block; margin: 0 auto;  width: 750px">
   
 # What does it actually do?
 Well the code is pretty easy to read but I will elaborate so that you know what will happen to your bones and stuff
