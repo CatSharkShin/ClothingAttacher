@@ -2,7 +2,7 @@ Made so that my customers can attach their new clothes easily in Unity.
 https://catsharku.gumroad.com
 
 # Usage
-1. Import the [ClothingAttacher.dll](https://github.com/CatSharkShin/ClothingAttacher/releases/download/v1.0.0/ClothingAttacher.dll).
+1. Import the [ClothingAttacher.dll](https://github.com/CatSharkShin/ClothingAttacher/releases/download/v1.0.0/ClothingAttacher.dll) into your unity project.
 2. Drag your clothing into the hierarchy.
 <br>
 <img
