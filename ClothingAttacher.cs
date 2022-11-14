@@ -10,12 +10,14 @@ public class ClothingAttacher : Editor
 {
     public override void OnInspectorGUI()
     {
-        base.OnInspectorGUI();
         SkinnedMeshRenderer t = (target as SkinnedMeshRenderer);
+        // TODO: Fix: The UI that is drawn looks off
+        base.OnInspectorGUI();
         if (GUILayout.Button("Attach"))
         {
             Transform root = t.transform.parent;
             t.bones = SetupBones(t, root);
+            t.rootBone = root.transform.Find("Armature").Find("Hips");
             t.sharedMesh.RecalculateBounds();
         }
     }
