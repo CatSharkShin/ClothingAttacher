@@ -157,9 +157,11 @@ namespace FoxClient
                     {
                         ModelImporter mi = (ModelImporter)ModelImporter.GetAtPath(AssetDatabase.GetAssetPath(cloth.sharedMesh));
                         float scaleDifference = armature.localScale.x / avatar.transform.Find("Armature").localScale.x;
-                        mi.globalScale = scaleDifference;
-                        EditorUtility.SetDirty(mi);
-                        mi.SaveAndReimport();
+                        if(!mi.globalScale.Equals(scaleDifference)){
+                            mi.globalScale = scaleDifference;
+                            EditorUtility.SetDirty(mi);
+                            mi.SaveAndReimport();
+                        }
                     }
 
                     // Unpack Prefab
